@@ -1,0 +1,50 @@
+{
+  "app": {
+    "name": "MVC Framework 42",
+    "version": "1.0.0",
+    "env": "dev",
+    "debug": true,
+    "timezone": "Europe/Moscow"
+  },
+  "database": {
+    "dsn": "pgsql:host=localhost;port=5432;dbname=mvc_framework",
+    "user": "postgres",
+    "password": "postgres",
+    "charset": "utf8"
+  },
+  "logging": {
+    "path": "runtime/logs/",
+    "app_log": "app.log",
+    "php_log": "php.log",
+    "error_log": "error.log",
+    "level": "info"
+  },
+  "cache": {
+    "enabled": true,
+    "path": "runtime/cache/",
+    "default_ttl": 3600
+  },
+  "session": {
+    "name": "mvc_framework_session",
+    "lifetime": 7200,
+    "path": "/",
+    "domain": "",
+    "secure": false,
+    "httponly": true
+  },
+  "security": {
+    "csrf_protection": true,
+    "xss_protection": true,
+    "content_security_policy": "default-src 'self'"
+  },
+  "mail": {
+    "driver": "smtp",
+    "host": "localhost",
+    "port": 587,
+    "username": "",
+    "password": "",
+    "encryption": "tls",
+    "from_address": "noreply@mvc-framework.local",
+    "from_name": "MVC Framework 42"
+  }
+}

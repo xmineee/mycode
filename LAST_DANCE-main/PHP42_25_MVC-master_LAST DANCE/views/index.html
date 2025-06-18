@@ -1,0 +1,53 @@
+{% extends layout.html %}
+
+{% block title %}Главная - MVC Framework 42{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h1 class="form-title">Регистрация пользователя</h1>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <p style="font-size: 1.1em; color: #666; margin-bottom: 20px;">
+            Добро пожаловать в систему управления пользователями на базе MVC Framework 42
+        </p>
+        <a href="/about" class="btn btn-secondary">Узнать больше о проекте</a>
+    </div>
+
+    <form action="/{{ post_action }}" method="post" style="margin-top: 40px;">
+        <div class="form-group">
+            <label for="first_name">Имя *</label>
+            <input type="text" name="first_name" id="first_name" required placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form-group">
+            <label for="second_name">Фамилия *</label>
+            <input type="text" name="second_name" id="second_name" required placeholder="Введите вашу фамилию">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Возраст</label>
+            <input type="number" name="age" id="age" min="1" max="120" placeholder="Введите ваш возраст">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" required placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="job">Профессия</label>
+            <input type="text" name="job" id="job" placeholder="Введите вашу профессию">
+        </div>
+
+        <div class="form-group" style="text-align: center; margin-top: 30px;">
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </div>
+    </form>
+
+    <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6;">
+        <p style="color: #666; font-size: 0.9em;">
+            Поля отмеченные * обязательны для заполнения
+        </p>
+    </div>
+</div>
+{% endblock %}

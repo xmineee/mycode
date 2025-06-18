@@ -1,0 +1,94 @@
+{% extends layout.html %}
+
+{% block title %}О проекте - MVC Framework 42{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="about-hero">
+    <h1>MVC Framework 42</h1>
+    <p class="subtitle">Современный PHP MVC фреймворк для веб-разработки</p>
+  </div>
+
+  <div class="about-content">
+    <div class="about-section">
+      <h2>О проекте</h2>
+      <p>MVC Framework 42 - это легковесный и современный PHP фреймворк, построенный по архитектурному паттерну Model-View-Controller. Фреймворк разработан с акцентом на простоту использования, производительность и расширяемость.</p>
+
+      <h3>Основные возможности:</h3>
+      <ul class="features-list">
+        <li>🚀 Быстрый роутинг с поддержкой GET/POST запросов</li>
+        <li>🗄️ Встроенная поддержка баз данных через PDO</li>
+        <li>📝 Система шаблонов с наследованием и блоками</li>
+        <li>🔧 Гибкая система конфигурации</li>
+        <li>📊 Встроенное логирование</li>
+        <li>🔄 Система миграций базы данных</li>
+        <li>🎯 Data Mapper для работы с моделями</li>
+      </ul>
+
+      <h3>Технологический стек:</h3>
+      <div class="tech-stack">
+        <span class="tech-badge">PHP 8.0+</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">Composer</span>
+        <span class="tech-badge">PSR-3 Logging</span>
+      </div>
+    </div>
+
+    <div class="about-section author-section">
+      <h2>Об авторе</h2>
+      <div class="author-card">
+        <div class="author-info">
+          <h3>Илья Кошарский</h3>
+          <p class="author-title">Разработчик полного цикла</p>
+          <p class="author-email">📧 elirector@gmail.com</p>
+
+          <p>Опытный разработчик с глубокими знаниями веб-технологий. Специализируется на создании масштабируемых веб-приложений и архитектурных решений. Приверженец чистого кода и современных практик разработки.</p>
+
+          <div class="author-skills">
+            <h4>Основные навыки:</h4>
+            <div class="skills-grid">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MVC Architecture</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h2>Структура проекта</h2>
+      <div class="project-structure">
+        <div class="structure-item">
+          <strong>web/</strong> - точка входа и статические файлы
+        </div>
+        <div class="structure-item">
+          <strong>controllers/</strong> - контроллеры приложения
+        </div>
+        <div class="structure-item">
+          <strong>views/</strong> - шаблоны отображения
+        </div>
+        <div class="structure-item">
+          <strong>core/</strong> - ядро фреймворка
+        </div>
+        <div class="structure-item">
+          <strong>models/</strong> - модели данных
+        </div>
+        <div class="structure-item">
+          <strong>mappers/</strong> - Data Mapper слой
+        </div>
+        <div class="structure-item">
+          <strong>migrations/</strong> - миграции БД
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="/" class="btn btn-primary">← Вернуться на главную</a>
+  </div>
+</div>
+{% endblock %}
